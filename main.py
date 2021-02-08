@@ -32,6 +32,7 @@ class Therapist(db.Entity):
     photo = Required(str)
 
 
+# db.bind(provider='postgres', user='username', host='localhost', database='database_name')
 db.bind(**db_params)
 
 db.generate_mapping(create_tables=True)  # создаем таблицы базы данных, в которых мы будем сохранять наши данные
