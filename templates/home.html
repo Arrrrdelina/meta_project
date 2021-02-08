@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User profile</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='index.css')}}">
+</head>
+<body>
+<div class="container">
+    {% for therapist in therapists %}
+    <div class="user__profile">
+            <div class="user__block_one">
+                <div class="user__photo">
+                    <img src="{{ therapist.photo }}" width="300">
+                </div>
+            </div>
+            <div class="user__block_two">
+                <div class="user__name">
+                    <h2>{{ therapist.name }}</h2>
+                </div>
+                <div class="user__methods">
+                    <h3>Методы:</h3>
+                    {{ therapist.methods }}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+</body>
+</html>

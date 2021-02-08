@@ -1,0 +1,41 @@
+html {
+    margin: 50px;
+    padding: 0px;
+    font-family: Trebuchet MS;
+    font-size: 16px;
+}
+
+div {
+    display: block;
+}
+
+.container {
+    width: 1280px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+}
+
+.user__profile {
+    margin-bottom: 30px;
+    display: flex;
+    width: 750px;
+    background: #f4f6fa;
+
+
+}
+
+.user__block_one{
+    margin-right: 30px;
+
+}
+
+img {
+    width: 300px;
+}
+
+
+h2 {
+    text-align: center;
+}
