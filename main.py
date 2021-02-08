@@ -1,4 +1,4 @@
-from config import AIRTABLE_BASE_ID, AIRTABLE_API_KEY, AIRTABLE_TABLE_NAME
+from config import AIRTABLE_BASE_ID, AIRTABLE_API_KEY, AIRTABLE_TABLE_NAME, db_params
 from datetime import datetime
 from pony.orm import *
 
@@ -32,7 +32,7 @@ class Therapist(db.Entity):
     photo = Required(str)
 
 
-db.bind(provider='postgres', user='adelegevorkan', host='localhost', database='meta_base')
+db.bind(**db_params)
 
 db.generate_mapping(create_tables=True)  # создаем таблицы базы данных, в которых мы будем сохранять наши данные
 
