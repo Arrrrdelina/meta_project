@@ -52,7 +52,6 @@ for i in range(0, size, BATCH_SIZE):
                 field = curr_record['fields']
                 Therapist(id=curr_record['id'], name=field['Имя'], photo=field['Фотография'][0]['url'],
                           methods='/ '.join(field['Методы']))
-                print(field['Фотография'][0]['url'])
             else:
                 field = curr_record['fields']
                 therapist.name = field['Имя']
