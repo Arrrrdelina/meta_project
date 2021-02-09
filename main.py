@@ -4,7 +4,6 @@ from pony.orm import *
 
 # -----------Получение данных с помощью http запроса get в формате json--------------
 import requests
-import enum
 
 url = f'https://api.airtable.com/v0/{AIRTABLE_BASE_ID}/{AIRTABLE_TABLE_NAME}?maxRecords=3&view=Grid%20view'
 
