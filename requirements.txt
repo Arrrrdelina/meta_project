@@ -1,0 +1,11 @@
+pip~=19.0.3
+wheel~=0.33.1
+cryptography~=2.7
+certifi~=2019.11.28
+chardet~=3.0.4
+six~=1.12.0
+idna~=2.8
+setuptools~=40.8.0
+requests~=2.7.0
+pony~=0.7.14
+Flask~=1.1.2
